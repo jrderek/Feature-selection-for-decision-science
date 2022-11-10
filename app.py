@@ -28,12 +28,12 @@ def run():
         layout="centered",
         initial_sidebar_state='expanded'
     )
-    load_nav_image(IMAGE_FOLDER/'EIDOlogo.png')
+    load_nav_image(IMAGE_FOLDER/'vanquisbank.webp')
     st.sidebar.title("Navigation")
     selection = st.sidebar.radio("Go to", list(PAGES.keys()))
 
     if selection == "Home":
-        load_header_image(IMAGE_FOLDER/'EIDOname.png')
+        load_header_image(IMAGE_FOLDER/'vb.jpeg')
         try:
             state_df,task = PAGES[selection].write(state)
             state.df, state.task = state_df,task
