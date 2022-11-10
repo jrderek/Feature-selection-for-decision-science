@@ -23,7 +23,7 @@ def run():
     # state = _get_state()
     state = st.session_state
     st.set_page_config(
-        page_title="EidoData App",
+        page_title="Feature-selection-for-Decision-Science",
         page_icon=':shark:',
         layout="centered",
         initial_sidebar_state='expanded'
